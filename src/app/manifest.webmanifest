@@ -1,0 +1,16 @@
+{
+  "name": "WaveOrtho - Orthodontic practice management",
+  "short_name": "WaveOrtho",
+  "description": "Intuitive tools designed to simplify operations, boost efficiency, and enhance patient care—all in one platform.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#fff",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}
