@@ -12,27 +12,27 @@ import screenshotVatReturns from '@/public/screenshots/vat-returns.png';
 
 const features = [
   {
-    title: 'Patient Portal',
+    title: 'Appointment book',
     description:
-      'Enhance your patient experience with a white, real-time patient portal that streamlines scheduling, payments, updates, and essential documentation.',
+      'Effortless scheduling made simple—seamlessly manage appointments, optimize workflow, track patient progress, and minimize no-shows.',
     image: screenshotPayroll,
   },
   {
-    title: 'Two-way texting',
+    title: 'Patient communication',
     description:
-      'Streamline patient communication with two-way texting, complete with notifications, text history, and after-hours forwarding.',
+      'Keep your patients engaged and your schedule running smoothly with two-way texting, automated reminders, and real-time confirmations.',
     image: screenshotExpenses,
   },
   {
-    title: 'Autopilot',
+    title: 'Patient portal',
     description:
-      'Effortless, automated marketing and engagement, fully branded for your practice.',
+      'Enhance patient convenience and practice efficiency with a custom-branded portal—empowering patients to manage appointments, payments, and records anytime.',
     image: screenshotVatReturns,
   },
   {
-    title: 'Reporting',
+    title: 'Automated marketing',
     description:
-      'Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.',
+      'Fill your schedule and keep patients engaged with automated follow-ups, marketing, and reminders—so you can focus on creating beautiful smiles.',
     image: screenshotReporting,
   },
 ];
@@ -61,16 +61,17 @@ export function PrimaryFeatures() {
     <section
       id="features"
       aria-label="Features for running your books"
-      className="relative overflow-hidden bg-gradient-to-b from-wo-blue to-wo-dark-blue pb-28 pt-20 sm:py-32"
+      className="relative overflow-hidden bg-wo-blue pb-28 pt-20 sm:py-32"
     >
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            Everything you need to run your practice.
+            Streamline your practice
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
-            Enhance efficiency, improve patient experiences, and simplify your
-            daily operations—all in one powerful platform.
+            From scheduling to automated marketing, our powerful features keep
+            patients engaged and reduce your workload—so you can focus on
+            delivering exceptional care.
           </p>
         </div>
         <TabGroup
