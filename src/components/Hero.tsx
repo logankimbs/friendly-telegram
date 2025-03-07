@@ -28,7 +28,7 @@ export function Hero() {
             and enhance patient care—all in one platform.
           </p>
           <div className="mt-10 justify-center">
-            <Button href="/contact-us">Schedule a demo</Button>
+            <Button href="/schedule-demo">Schedule a demo</Button>
           </div>
 
           <div className="mt-36 lg:mt-44">

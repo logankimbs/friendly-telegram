@@ -20,7 +20,7 @@ const testimonials = [
   [
     {
       content:
-        'If you are deciding on a software for your office, stop looking. This is it. WaveOrtho does everything from: email and text reminders, ceph tracing, and simple note taking. After using the other major software offering, I can confidently say WaveOrtho is far superior.',
+        'This is it, WaveOrtho does everything from: email and text reminders, ceph tracing, and simple note taking. After using the other major software offering, I can confidently say WaveOrtho is far superior.',
       author: {
         name: 'Dr. David Majeroni',
         role: 'Majeroni Orthodontics',
@@ -64,7 +64,7 @@ export function Testimonials() {
           <p className="mt-4 text-lg tracking-tight text-slate-700">
             Empowering practices with lightning-fast performance, innovative
             features, and reliable support—designed to help you deliver
-            exceptional care while thriving effortlessly.
+            exceptional care.
           </p>
         </div>
         <ul

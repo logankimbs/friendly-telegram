@@ -107,11 +107,11 @@ export function Pricing() {
             <span className="relative whitespace-nowrap">
               <span className="relative">Simple pricing,</span>
             </span>{' '}
-            for everyone.
+            for every practice.
           </h2>
           <p className="mt-4 text-lg text-slate-400">
-            It doesn’t matter what size your business is, our software won’t
-            work well for you.
+            Whether you’re an orthodontic service organization or a private
+            practice, we offer simple, transparent pricing that fits your needs.
           </p>
         </div>
         <div className="-mx-4 mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-4 xl:mx-0 xl:gap-x-8">
@@ -119,7 +119,7 @@ export function Pricing() {
             name="Core"
             price=""
             description="All the essentials to power your practice."
-            href="/register"
+            href="/schedule-demo"
             features={[
               'Send 10 quotes and invoices',
               'Connect up to 2 bank accounts',
@@ -132,7 +132,7 @@ export function Pricing() {
             name="Connect"
             price=""
             description="Advanced tools for patient engagement."
-            href="/register"
+            href="/schedule-demo"
             features={[
               'Send 25 quotes and invoices',
               'Connect up to 5 bank accounts',
@@ -148,7 +148,7 @@ export function Pricing() {
             name="Grow"
             price=""
             description="All-in-one solution for your practice growth."
-            href="/register"
+            href="/schedule-demo"
             features={[
               'Send unlimited quotes and invoices',
               'Connect up to 15 bank accounts',
@@ -161,7 +161,7 @@ export function Pricing() {
             name="Complete"
             price=""
             description="The ultimate package for orthodontic excellence."
-            href="/register"
+            href="/schedule-demo"
             features={[
               'Send unlimited quotes and invoices',
               'Connect up to 15 bank accounts',

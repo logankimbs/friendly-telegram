@@ -100,9 +100,10 @@ export function Header() {
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
             <div className="hidden md:block">
-              <NavLink href="/login">Sign in</NavLink>
+              {/* todo: add route to client hub */}
+              <NavLink href="">Sign in</NavLink>
             </div>
-            <Button href="/register" color="blue">
+            <Button href="/schedule-demo" color="blue">
               <span>
                 Get started <span className="hidden lg:inline">today</span>
               </span>
