@@ -1,8 +1,4 @@
-import Link from 'next/link';
-
 import { Button } from '@/components/Button';
-import { Logo } from '@/components/Logo';
-import { SlimLayout } from '@/components/SlimLayout';
 import { Container } from '@/components/Container';
 import React from 'react';
 
