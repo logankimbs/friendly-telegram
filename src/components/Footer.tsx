@@ -29,7 +29,11 @@ export function Footer() {
       <Container>
         <div className="py-16">
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-            <Logo className="mx-auto h-10 w-auto" />
+            <div>
+              <a href="/">
+                <Logo className="mx-auto h-10 w-auto" />
+              </a>
+            </div>
             <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
               <div className="md:grid md:grid-cols-2 md:gap-8">
                 <div>
