@@ -59,7 +59,7 @@ export function Testimonials() {
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            Loved by practices everywhere.
+            Loved by practices everywhere
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
             Empowering practices with lightning-fast performance, innovative

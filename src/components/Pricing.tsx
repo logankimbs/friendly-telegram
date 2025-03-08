@@ -107,7 +107,7 @@ export function Pricing() {
             <span className="relative whitespace-nowrap">
               <span className="relative">Simple pricing,</span>
             </span>{' '}
-            for every practice.
+            for every practice
           </h2>
           <p className="mt-4 text-lg text-slate-400">
             Whether you’re an orthodontic service organization or a private
