@@ -7,7 +7,7 @@ export function Hero() {
     <div className="relative overflow-hidden">
       <WaveBackground />
       <div className="relative">
-        <Container className="pb-16 pt-20 text-center lg:pt-32">
+        <Container className="pb-16 pt-20 text-center lg:pt-32 mb-36 lg:mb-44">
           <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
             A new{' '}
             <span className="relative whitespace-nowrap text-wo-blue">
