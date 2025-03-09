@@ -1,7 +1,7 @@
-import React from 'react';
-import clsx from 'clsx';
 import { Button } from '@/components/Button';
 import { Container } from '@/components/Container';
+import clsx from 'clsx';
+import React from 'react';
 
 function CheckIcon({
   className,

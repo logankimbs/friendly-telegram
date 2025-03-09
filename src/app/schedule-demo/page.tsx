@@ -1,9 +1,9 @@
-import { type Metadata } from 'next';
 import { Button } from '@/components/Button';
-import { TextField } from '@/components/Fields';
-import { Header } from '@/components/Header';
-import { Footer } from '@/components/Footer';
 import { Container } from '@/components/Container';
+import { TextField } from '@/components/Fields';
+import { Footer } from '@/components/Footer';
+import { Header } from '@/components/Header';
+import { type Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Schedule Demo',

@@ -1,7 +1,7 @@
-import { type Metadata } from 'next';
-import { Header } from '@/components/Header';
-import { Footer } from '@/components/Footer';
 import { Container } from '@/components/Container';
+import { Footer } from '@/components/Footer';
+import { Header } from '@/components/Header';
+import { type Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',

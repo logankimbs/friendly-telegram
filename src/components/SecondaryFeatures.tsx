@@ -1,13 +1,13 @@
 'use client';
 
-import React, { useId } from 'react';
-import Image, { type ImageProps } from 'next/image';
-import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react';
-import clsx from 'clsx';
 import { Container } from '@/components/Container';
 import screenshotContacts from '@/public/screenshots/contacts.png';
 import screenshotInventory from '@/public/screenshots/inventory.png';
 import screenshotProfitLoss from '@/public/screenshots/profit-loss.png';
+import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react';
+import clsx from 'clsx';
+import Image, { type ImageProps } from 'next/image';
+import React, { useId } from 'react';
 
 interface Feature {
   name: React.ReactNode;

@@ -1,9 +1,9 @@
-import React from 'react';
-import Image from 'next/image';
 import { Container } from '@/components/Container';
 import drFrost from '@/public/avatars/dr-frost.png';
 import drMajeroni from '@/public/avatars/dr-majeroni.png';
 import drPaschal from '@/public/avatars/dr-paschal.png';
+import Image from 'next/image';
+import React from 'react';
 
 const testimonials = [
   [

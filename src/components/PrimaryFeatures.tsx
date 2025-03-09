@@ -1,14 +1,14 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-import Image from 'next/image';
-import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react';
-import clsx from 'clsx';
 import { Container } from '@/components/Container';
 import screenshotExpenses from '@/public/screenshots/expenses.png';
 import screenshotPayroll from '@/public/screenshots/payroll.png';
 import screenshotReporting from '@/public/screenshots/reporting.png';
 import screenshotVatReturns from '@/public/screenshots/vat-returns.png';
+import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react';
+import clsx from 'clsx';
+import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
 const features = [
   {
