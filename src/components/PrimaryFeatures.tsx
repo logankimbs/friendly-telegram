@@ -120,7 +120,7 @@ export function PrimaryFeatures() {
                 </TabList>
               </div>
               <TabPanels className="lg:col-span-7">
-                {features.map((feature) => (
+                {features.map((feature, index) => (
                   <TabPanel key={feature.title} unmount={false}>
                     <div className="relative sm:px-6 lg:hidden">
                       <div className="absolute -inset-x-4 bottom-[-4.25rem] top-[-6.5rem] bg-white/10 ring-1 ring-inset ring-white/10 sm:inset-x-0 sm:rounded-t-xl" />
@@ -133,7 +133,7 @@ export function PrimaryFeatures() {
                         className="w-full"
                         src={feature.image}
                         alt=""
-                        priority
+                        priority={index === 0}
                         sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 100vw, 45rem"
                       />
                     </div>
