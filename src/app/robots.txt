@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /api/
+Disallow: /services/
+Disallow: /components/
+Disallow: /emails/
+Disallow: /company/
