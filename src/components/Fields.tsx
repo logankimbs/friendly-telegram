@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import React, { useId } from 'react';
 
 const formClasses =
-  'block w-full appearance-none rounded-md border border-gray-200 bg-gray-50 px-3 py-2 text-gray-900 placeholder-gray-400 focus:border-wo-blue focus:bg-white focus:outline-none focus:ring-wo-blue sm:text-sm';
+  'block w-full appearance-none rounded-md border border-gray-200 bg-gray-50 px-3 py-2 text-gray-900 placeholder-gray-400 focus:border-wo-blue focus:bg-white focus:outline-none focus:ring-wo-blue sm:text-sm disabled:bg-gray-100 disabled:text-gray-400';
 
 function Label({
   id,
