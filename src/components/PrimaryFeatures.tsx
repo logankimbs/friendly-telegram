@@ -15,25 +15,37 @@ const features = [
     title: 'Appointment book',
     description:
       'Effortless scheduling made simple—seamlessly manage appointments, optimize workflow, track patient progress, and minimize no-shows.',
-    image: screenshotPayroll,
+    image: {
+      src: screenshotPayroll,
+      alt: 'image of appointment book feature',
+    },
   },
   {
     title: 'Patient communication',
     description:
       'Keep your patients engaged and your schedule running smoothly with two-way texting, automated reminders, and real-time confirmations.',
-    image: screenshotExpenses,
+    image: {
+      src: screenshotExpenses,
+      alt: 'image of patient communication feature',
+    },
   },
   {
     title: 'Patient portal',
     description:
       'Enhance patient convenience and practice efficiency with a custom-branded portal—empowering patients to manage appointments, payments, and records anytime.',
-    image: screenshotVatReturns,
+    image: {
+      src: screenshotVatReturns,
+      alt: 'image of patient portal feature',
+    },
   },
   {
     title: 'Automated marketing',
     description:
       'Fill your schedule and keep patients engaged with automated follow-ups, marketing, and reminders—so you can focus on creating beautiful smiles.',
-    image: screenshotReporting,
+    image: {
+      src: screenshotReporting,
+      alt: 'image of automated marketing feature',
+    },
   },
 ];
 
@@ -131,8 +143,8 @@ export function PrimaryFeatures() {
                     <div className="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
                       <Image
                         className="w-full"
-                        src={feature.image}
-                        alt=""
+                        src={feature.image.src}
+                        alt={feature.image.alt}
                         priority={index === 0}
                         sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 100vw, 45rem"
                       />

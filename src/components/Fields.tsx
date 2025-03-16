@@ -9,7 +9,7 @@ function Label({
   children,
   className,
 }: {
-  id: string;
+  id?: string;
   children: React.ReactNode;
   className?: string;
 }) {
@@ -78,9 +78,7 @@ export function TextField({
       <div className="flex justify-between">
         {label && <Label id={id}>{label}</Label>}
         {description && (
-          <Label id={descriptionId} className="font-normal text-gray-400">
-            {description}
-          </Label>
+          <Label className="font-normal text-gray-400">{description}</Label>
         )}
       </div>
       <input id={id} type={type} {...props} className={formClasses} />
