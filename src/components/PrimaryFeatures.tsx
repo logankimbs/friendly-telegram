@@ -104,19 +104,17 @@ export function PrimaryFeatures() {
                           : 'hover:bg-white/10 lg:hover:bg-white/5',
                       )}
                     >
-                      <h3>
-                        <Tab
-                          className={clsx(
-                            'font-display text-lg ui-not-focus-visible:outline-none',
-                            selectedIndex === featureIndex
-                              ? 'text-wo-blue lg:text-white'
-                              : 'text-blue-100 hover:text-white lg:text-white',
-                          )}
-                        >
-                          <span className="absolute inset-0 rounded-full lg:rounded-l-xl lg:rounded-r-none" />
-                          {feature.title}
-                        </Tab>
-                      </h3>
+                      <Tab
+                        className={clsx(
+                          'font-display text-lg ui-not-focus-visible:outline-none',
+                          selectedIndex === featureIndex
+                            ? 'text-wo-blue lg:text-white'
+                            : 'text-blue-100 hover:text-white lg:text-white',
+                        )}
+                      >
+                        <span className="absolute inset-0 rounded-full lg:rounded-l-xl lg:rounded-r-none" />
+                        {feature.title}
+                      </Tab>
                       <p
                         className={clsx(
                           'mt-2 hidden text-sm lg:block',
