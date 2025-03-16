@@ -34,8 +34,6 @@ export const rootMetadata: Metadata = {
       alt: 'WaveOrtho orthodontic practice management software',
     },
   },
-  // todo: add icons https://nextjs.org/docs/app/api-reference/functions/generate-metadata#icons
-  icons: {},
 };
 
 export const scheduleDemoMetadata: Metadata = {
@@ -55,6 +53,4 @@ export const scheduleDemoMetadata: Metadata = {
       alt: 'WaveOrtho orthodontic practice management software',
     },
   },
-  // todo: add icons https://nextjs.org/docs/app/api-reference/functions/generate-metadata#icons
-  icons: {},
 };
