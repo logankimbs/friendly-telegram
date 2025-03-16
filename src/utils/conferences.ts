@@ -1,4 +1,4 @@
-type conference = {
+type Conference = {
   title: string;
   location: string;
   date: string;
@@ -7,7 +7,7 @@ type conference = {
   url: string;
 };
 
-const conferences: conference[] = [
+const conferences: Conference[] = [
   {
     title: 'WIO Annual Conference',
     location: 'Orlando, FL',
@@ -82,7 +82,7 @@ const conferences: conference[] = [
   },
 ];
 
-export const getUpcomingConference = (): conference | null => {
+export const getUpcomingConference = (): Conference | null => {
   const now = new Date();
   const upcomingConferences = conferences.filter((conf) => conf.endDate >= now);
 
