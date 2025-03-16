@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 export const rootMetadata: Metadata = {
   title: {
     template: '%s - WaveOrtho',
-    default: 'WaveOrtho - Orthodontic practice management',
+    default: 'Orthodontic practice management - WaveOrtho',
   },
   description:
     'WaveOrtho is the most comprehensive orthodontic practice management software for managing and growing your practice.',
@@ -20,13 +20,41 @@ export const rootMetadata: Metadata = {
     'orthodontic business management software',
   ],
   openGraph: {
-    url: 'https://www.waveortho.com/',
-    title: 'Orthodontic Practice Management Software',
+    title: 'Orthodontic practice management software',
     description:
       'WaveOrtho is the most comprehensive orthodontic practice management software for managing and growing your practice.',
-    images: [],
+    url: 'https://www.waveortho.com/',
     siteName: 'WaveOrtho',
+    locale: 'en_US',
     type: 'website',
+    images: {
+      url: 'https://www.waveortho.com/open-graph/waveortho.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'WaveOrtho orthodontic practice management software',
+    },
   },
+  // todo: add icons https://nextjs.org/docs/app/api-reference/functions/generate-metadata#icons
+  icons: {},
+};
+
+export const scheduleDemoMetadata: Metadata = {
+  title: 'Schedule demo',
+  description: 'Schedule a demo with WaveOrtho',
+  openGraph: {
+    title: 'Schedule demo',
+    description: 'Discover how we can streamline your orthodontic practice.',
+    url: 'https://www.waveortho.com/shedule-demo',
+    siteName: 'WaveOrtho',
+    locale: 'en_US',
+    type: 'website',
+    images: {
+      url: 'https://www.waveortho.com/open-graph/waveortho.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'WaveOrtho orthodontic practice management software',
+    },
+  },
+  // todo: add icons https://nextjs.org/docs/app/api-reference/functions/generate-metadata#icons
   icons: {},
 };
