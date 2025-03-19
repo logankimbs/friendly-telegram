@@ -1,7 +1,7 @@
 import { Container } from '@/components/Container';
-import { DemoForm } from '@/components/DemoForm';
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
+import { ScheduleDemoForm } from '@/components/ScheduleDemoForm';
 import { scheduleDemoMetadata } from '@/utils/metadata';
 import { Metadata } from 'next';
 
@@ -27,7 +27,7 @@ export default function ScheduleDemo() {
             </p>
           </div>
 
-          <DemoForm />
+          <ScheduleDemoForm />
         </Container>
       </main>
       <Footer />
