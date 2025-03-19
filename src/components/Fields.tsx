@@ -1,18 +1,22 @@
 import clsx from 'clsx';
-import React, { useId } from 'react';
+import React, { forwardRef, useId } from 'react';
 
-const formClasses =
-  'block w-full appearance-none rounded-md border border-gray-200 bg-gray-50 px-3 py-2 text-gray-900 placeholder-gray-400 focus:border-wo-blue focus:bg-white focus:outline-none focus:ring-wo-blue sm:text-sm disabled:bg-gray-100 disabled:text-gray-400';
+const baseStyle =
+  'block w-full appearance-none rounded-md border border-gray-200 bg-gray-50 px-3 py-2 text-gray-900 placeholder-gray-400 focus:border-wo-blue focus:bg-white focus:outline-none focus:ring-wo-blue sm:text-sm';
 
-function Label({
-  id,
-  children,
-  className,
-}: {
+const variantStyles = {
+  error:
+    'border-red-200 bg-red-50 text-red-900 focus:text-gray-900 focus:border-red-600 focus:ring-red-600',
+  disabled: 'bg-gray-100 text-gray-400',
+};
+
+type LabelProps = {
   id?: string;
   children: React.ReactNode;
   className?: string;
-}) {
+};
+
+function Label({ id, children, className }: LabelProps) {
   return (
     <label
       htmlFor={id}
@@ -26,77 +30,111 @@ function Label({
   );
 }
 
-export function TextArea({
-  label,
-  description,
-  rows = 4,
-  className,
-  ...props
-}: Omit<React.ComponentPropsWithoutRef<'textarea'>, 'id'> & {
+type TextAreaProps = Omit<React.ComponentPropsWithoutRef<'textarea'>, 'id'> & {
   label: string;
-  description?: string;
-}) {
-  const id = useId();
-  const descriptionId = `${id}-description`;
+  required?: boolean;
+  rows?: number;
+  error?: string;
+};
 
-  return (
-    <div className={className}>
-      <div className="flex justify-between">
-        {label && <Label id={id}>{label}</Label>}
-        {description && (
-          <Label id={descriptionId} className="font-normal text-gray-400">
-            {description}
-          </Label>
+export const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(
+  ({ label, required = false, rows = 4, className, ...props }, ref) => {
+    const id = useId();
+    const textAreaClassName = clsx(
+      baseStyle,
+      props.error ? variantStyles.error : '',
+      props.disabled ? variantStyles.disabled : '',
+    );
+
+    return (
+      <div className={className}>
+        <div className="flex justify-between">
+          {label && <Label id={id}>{label}</Label>}
+          {!required && (
+            <Label className="font-normal text-gray-400">Optional</Label>
+          )}
+        </div>
+        <textarea
+          id={id}
+          rows={rows}
+          ref={ref}
+          className={clsx(textAreaClassName, 'resize-none', className)}
+          {...props}
+        />
+        {props.error && (
+          <p className="mt-2 text-sm text-red-600 ">{props.error}</p>
         )}
       </div>
-      <textarea
-        id={id}
-        rows={rows}
-        aria-describedby={description ? descriptionId : undefined}
-        className={clsx(formClasses, 'resize-none', className)}
-        {...props}
-      />
-    </div>
-  );
-}
+    );
+  },
+);
 
-export function TextField({
-  label,
-  description,
-  type = 'text',
-  className,
-  ...props
-}: Omit<React.ComponentPropsWithoutRef<'input'>, 'id'> & {
+type TextFieldProps = Omit<React.ComponentPropsWithoutRef<'input'>, 'id'> & {
   label: string;
-  description?: string;
-}) {
-  let id = useId();
-  const descriptionId = `${id}-description`;
+  required?: boolean;
+  error?: string;
+};
 
-  return (
-    <div className={className}>
-      <div className="flex justify-between">
-        {label && <Label id={id}>{label}</Label>}
-        {description && (
-          <Label className="font-normal text-gray-400">{description}</Label>
+export const TextField = forwardRef<HTMLInputElement, TextFieldProps>(
+  ({ label, type = 'text', required = false, className, ...props }, ref) => {
+    const id = useId();
+    const inputClassName = clsx(
+      baseStyle,
+      props.error ? variantStyles.error : '',
+      props.disabled ? variantStyles.disabled : '',
+    );
+
+    return (
+      <div className={className}>
+        <div className="flex justify-between">
+          <Label id={id}>{label}</Label>
+          {!required && (
+            <Label className="font-normal text-gray-400">Optional</Label>
+          )}
+        </div>
+        <input
+          id={id}
+          type={type}
+          ref={ref}
+          className={inputClassName}
+          aria-invalid={!!props.error}
+          {...props}
+        />
+        {props.error && (
+          <p className="mt-2 text-sm text-red-600 ">{props.error}</p>
         )}
       </div>
-      <input id={id} type={type} {...props} className={formClasses} />
-    </div>
-  );
-}
+    );
+  },
+);
 
-export function SelectField({
-  label,
-  className,
-  ...props
-}: Omit<React.ComponentPropsWithoutRef<'select'>, 'id'> & { label: string }) {
-  let id = useId();
+type SelectFieldProps = Omit<React.ComponentPropsWithoutRef<'select'>, 'id'> & {
+  label: string;
+  error?: string;
+};
 
-  return (
-    <div className={className}>
-      {label && <Label id={id}>{label}</Label>}
-      <select id={id} {...props} className={clsx(formClasses, 'pr-8')} />
-    </div>
-  );
-}
+export const SelectField = forwardRef<HTMLSelectElement, SelectFieldProps>(
+  ({ label, className, ...props }, ref) => {
+    let id = useId();
+    const selectClassName = clsx(
+      baseStyle,
+      props.error ? variantStyles.error : '',
+      props.disabled ? variantStyles.disabled : '',
+    );
+
+    return (
+      <div className={className}>
+        {label && <Label id={id}>{label}</Label>}
+        <select
+          id={id}
+          {...props}
+          ref={ref}
+          className={clsx(selectClassName, 'pr-8')}
+        />
+        {props.error && (
+          <p className="mt-2 text-sm text-red-600 ">{props.error}</p>
+        )}
+      </div>
+    );
+  },
+);
