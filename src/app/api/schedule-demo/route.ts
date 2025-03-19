@@ -1,10 +1,19 @@
 import { clearSessionToken, getSessionToken } from '@/services/hub';
+import { scheduleDemoFormSchema } from '@/utils/schemas';
 
 // post demo data to hub
 export async function POST(req: Request) {
   const body = await req.json();
+  const result = scheduleDemoFormSchema.safeParse(body);
 
-  console.log('data to post', body);
+  if (!result.success) {
+    const errors = Object.fromEntries(
+      result.error?.issues?.map((issue) => [issue.path[0], issue.message]) ||
+        [],
+    );
+
+    return Response.json({ errors });
+  }
 
   try {
     const token = await getSessionToken();
