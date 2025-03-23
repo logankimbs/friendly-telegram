@@ -1,3 +1,5 @@
+'use server';
+
 import { ScheduleDemoFormFields } from '@/components/ScheduleDemoForm';
 
 const url = process.env.HUB_URL || '';
