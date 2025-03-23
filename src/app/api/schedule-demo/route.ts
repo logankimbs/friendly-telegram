@@ -24,6 +24,7 @@ export async function POST(req: Request) {
 
     await postScheduleDemoData(token, result.data);
     await clearSessionToken(token);
+
     return Response.json(null, { status: 200 });
   } catch (error: any) {
     console.error(error);
