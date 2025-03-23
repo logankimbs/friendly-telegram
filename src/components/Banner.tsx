@@ -3,9 +3,7 @@ import { getUpcomingConference } from '@/utils/conferences';
 export function Banner() {
   const conference = getUpcomingConference();
 
-  if (!conference) {
-    return null;
-  }
+  if (!conference) return null;
 
   return (
     <div className="bg-wo-blue px-6 py-2.5 text-left sm:px-3.5 md:text-center">
