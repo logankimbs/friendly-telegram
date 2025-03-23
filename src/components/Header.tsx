@@ -1,5 +1,9 @@
 'use client';
 
+import { Button } from '@/components/Button';
+import { Container } from '@/components/Container';
+import { Logo, Mark } from '@/components/Logo';
+import { NavLink } from '@/components/NavLink';
 import {
   Popover,
   PopoverBackdrop,
@@ -8,19 +12,14 @@ import {
 } from '@headlessui/react';
 import clsx from 'clsx';
 import Link from 'next/link';
+import React from 'react';
 
-import { Button } from '@/components/Button';
-import { Container } from '@/components/Container';
-import { Logo, Mark } from '@/components/Logo';
-import { NavLink } from '@/components/NavLink';
-
-function MobileNavLink({
-  href,
-  children,
-}: {
+type MobileNavLinkProps = {
   href: string;
   children: React.ReactNode;
-}) {
+};
+
+function MobileNavLink({ href, children }: MobileNavLinkProps) {
   return (
     <PopoverButton as={Link} href={href} className="block w-full p-2">
       {children}
@@ -28,7 +27,11 @@ function MobileNavLink({
   );
 }
 
-function MobileNavIcon({ open }: { open: boolean }) {
+type MobileNavIconProps = {
+  open: boolean;
+};
+
+function MobileNavIcon({ open }: MobileNavIconProps) {
   return (
     <svg
       aria-hidden="true"
@@ -76,7 +79,8 @@ function MobileNavigation() {
         <MobileNavLink href="/#testimonials">Testimonials</MobileNavLink>
         <MobileNavLink href="/#pricing">Pricing</MobileNavLink>
         <hr className="m-2 border-slate-300/40" />
-        <MobileNavLink href="/login">Sign in</MobileNavLink>
+        {/* todo: add route to client hub */}
+        <MobileNavLink href="">Sign in</MobileNavLink>
       </PopoverPanel>
     </Popover>
   );
@@ -88,7 +92,7 @@ export function Header() {
       <Container>
         <nav className="relative z-50 flex justify-between">
           <div className="flex items-center md:gap-x-12">
-            <Link href="/" aria-label="Home">
+            <Link href="/" aria-label="Home" className="rounded-lg px-2 py-1">
               <Logo className="hidden h-10 w-auto sm:block" />
               <Mark className="block h-10 w-auto sm:hidden" />
             </Link>
