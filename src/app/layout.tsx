@@ -1,5 +1,4 @@
-import GoogleAnalytics from '@/components/GoogleAnalytics';
-import SocialIntents from '@/components/SocialIntents';
+import { ThirdPartyScripts } from '@/components/ThirdPartyScripts';
 import '@/styles/tailwind.css';
 import { rootMetadata } from '@/utils/metadata';
 import clsx from 'clsx';
@@ -35,8 +34,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" className={htmlClasses}>
       <body className="flex h-full flex-col">{children}</body>
-      <GoogleAnalytics />
-      <SocialIntents />
+      <ThirdPartyScripts />
     </html>
   );
 }

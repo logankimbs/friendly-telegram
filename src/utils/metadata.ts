@@ -23,7 +23,7 @@ export const rootMetadata: Metadata = {
     title: 'Orthodontic practice management software',
     description:
       'WaveOrtho is the most comprehensive orthodontic practice management software for managing and growing your practice.',
-    url: 'https://www.waveortho.com/',
+    url: 'https://www.waveortho.com',
     siteName: 'WaveOrtho',
     locale: 'en_US',
     type: 'website',
