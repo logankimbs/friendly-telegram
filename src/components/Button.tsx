@@ -12,7 +12,13 @@ const variantStyles = {
   solid: {
     slate:
       'bg-slate-900 text-white hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900',
-    blue: 'bg-wo-blue text-white hover:bg-wo-blue-hover active:bg-wo-blue-active focus-visible:outline-wo-blue',
+    'light-blue':
+      'bg-wo-light-blue-500 text-white hover:bg-wo-light-blue-400 active:bg-wo-light-blue-600 focus-visible:outline-wo-light-blue-500',
+    blue: 'bg-wo-blue-500 text-white hover:bg-wo-blue-400 active:bg-wo-blue-600 focus-visible:outline-wo-blue-500',
+    'dark-blue':
+      'bg-wo-dark-blue-500 text-white hover:bg-wo-dark-blue-400 active:bg-wo-dark-blue-600 focus-visible:outline-wo-dark-blue-500',
+    'lime-green':
+      'bg-wo-lime-green-500 text-white hover:bg-wo-lime-green-400 active:bg-wo-lime-green-600 focus-visible:outline-wo-lime-green-500',
     white:
       'bg-white text-slate-900 hover:bg-blue-50 active:bg-blue-200 active:text-slate-600 focus-visible:outline-white',
   },
@@ -20,7 +26,7 @@ const variantStyles = {
     slate:
       'ring-slate-200 text-slate-700 hover:text-slate-900 hover:ring-slate-300 active:bg-slate-100 active:text-slate-600 focus-visible:outline-blue-600 focus-visible:ring-slate-300',
     white:
-      'ring-slate-700 text-white hover:ring-slate-500 active:ring-slate-700 active:text-slate-400 focus-visible:outline-white',
+      'ring-slate-300 text-slate-300 hover:ring-slate-50 hover:text-slate-50 active:ring-slate-400 active:text-slate-400 focus-visible:outline-white',
   },
 };
 
