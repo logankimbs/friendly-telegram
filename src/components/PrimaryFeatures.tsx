@@ -1,7 +1,6 @@
 'use client';
 
 import { Container } from '@/components/Container';
-import screenshotExpenses from '@/public/screenshots/expenses.png';
 import screenshotPayroll from '@/public/screenshots/payroll.png';
 import screenshotReporting from '@/public/screenshots/reporting.png';
 import screenshotVatReturns from '@/public/screenshots/vat-returns.png';
@@ -12,21 +11,21 @@ import { useEffect, useState } from 'react';
 
 const features = [
   {
-    title: 'Appointment book',
+    title: 'Treatment card pro',
     description:
-      'Effortless scheduling made simple—seamlessly manage appointments, optimize workflow, track patient progress, and minimize no-shows.',
+      'No clicking around - get the complete story of a patient’s treatment in one quick glance.',
     image: {
       src: screenshotPayroll,
       alt: 'image of appointment book feature',
     },
   },
   {
-    title: 'Patient communication',
+    title: 'Appointment book',
     description:
-      'Keep your patients engaged and your schedule running smoothly with two-way texting, automated reminders, and real-time confirmations.',
+      'Effortless scheduling made simple—seamlessly manage appointments, optimize workflow, track patient progress, and minimize no-shows.',
     image: {
-      src: screenshotExpenses,
-      alt: 'image of patient communication feature',
+      src: screenshotVatReturns,
+      alt: 'image of appointment book feature',
     },
   },
   {
