@@ -9,15 +9,16 @@ export function Hero() {
       <div className="relative">
         <Container className="pb-16 pt-20 text-center lg:pt-32 mb-36 lg:mb-44">
           <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
-            A new{' '}
+            True{' '}
             <span className="relative whitespace-nowrap text-wo-blue">
-              <span className="relative">swell</span>
+              <span className="relative">all-in-one</span>
             </span>{' '}
-            in orthodontic practice management
+            ortho software you can trust
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
-            Intuitive tools designed to simplify operations, boost efficiency,
-            and enhance patient care—all in one platform.
+            Streamline your practice with a fully integrated, cloud-based
+            solution—no hidden fees, no third-party integrations, just seamless
+            management for your orthodontic practice.
           </p>
           <div className="mt-10 justify-center">
             <Button href="/schedule-demo">Schedule a demo</Button>
