@@ -59,7 +59,7 @@ function Plan({
       <p
         className={clsx(
           'mt-2 text-base',
-          featured ? 'text-white' : 'text-slate-400',
+          featured ? 'text-white' : 'text-slate-300',
         )}
       >
         {description}
@@ -99,7 +99,7 @@ export function Pricing() {
     <section
       id="pricing"
       aria-label="Pricing"
-      className="bg-slate-900 py-20 sm:py-32"
+      className="bg-wo-dark-blue py-20 sm:py-32"
     >
       <Container className="max-w-full">
         <div className="md:text-center">
@@ -109,7 +109,7 @@ export function Pricing() {
             </span>{' '}
             for every practice
           </h2>
-          <p className="mt-4 text-lg text-slate-400">
+          <p className="mt-4 text-lg text-slate-300">
             Whether you’re an orthodontic service organization or a private
             practice, we offer simple, transparent pricing that fits your needs.
           </p>
