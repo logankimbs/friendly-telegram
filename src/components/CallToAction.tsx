@@ -12,7 +12,7 @@ export function CallToAction() {
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
             Get started today
           </h2>
-          <p className="mt-4 text-lg tracking-tight text-white">
+          <p className="mt-4 text-lg tracking-tight text-wo-blue-50">
             Streamline your workflow, and simplify your day-to-day operations.
             Don’t wait—your practice deserves the best.
           </p>

@@ -59,7 +59,7 @@ function Plan({
       <p
         className={clsx(
           'mt-2 text-base',
-          featured ? 'text-white' : 'text-slate-300',
+          featured ? 'text-white' : 'text-wo-dark-blue-100',
         )}
       >
         {description}
@@ -71,7 +71,7 @@ function Plan({
         role="list"
         className={clsx(
           'order-last mt-10 flex flex-col gap-y-3 text-sm',
-          featured ? 'text-white' : 'text-slate-200',
+          featured ? 'text-white' : 'text-wo-dark-blue-100',
         )}
       >
         {features.map((feature) => (
@@ -109,7 +109,7 @@ export function Pricing() {
             </span>{' '}
             for every practice
           </h2>
-          <p className="mt-4 text-lg text-slate-300">
+          <p className="mt-4 text-lg text-wo-dark-blue-100">
             Whether you’re an orthodontic service organization or a private
             practice, we offer simple, transparent pricing that fits your needs.
           </p>

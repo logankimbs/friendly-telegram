@@ -79,7 +79,7 @@ export function PrimaryFeatures() {
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
             Streamline your practice
           </h2>
-          <p className="mt-6 text-lg tracking-tight text-blue-100">
+          <p className="mt-6 text-lg tracking-tight text-wo-blue-50">
             From scheduling to automated marketing, our powerful features keep
             patients engaged and reduce your workload—so you can focus on
             delivering exceptional care.
@@ -119,7 +119,7 @@ export function PrimaryFeatures() {
                           'mt-2 hidden text-sm lg:block',
                           selectedIndex === featureIndex
                             ? 'text-white'
-                            : 'text-blue-100 group-hover:text-white',
+                            : 'text-wo-blue-50 group-hover:text-white',
                         )}
                       >
                         {feature.description}
