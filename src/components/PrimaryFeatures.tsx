@@ -13,32 +13,32 @@ const features = [
   {
     title: 'Treatment card pro',
     description:
-      'No clicking around - get the complete story of a patient’s treatment in one quick glance.',
+      'Everything you need to plan, track, and perfect treatment—faster, smarter, and more consistently than ever before.',
     image: {
       src: screenshotPayroll,
       alt: 'image of appointment book feature',
     },
   },
   {
-    title: 'Appointment book',
+    title: 'Case closer pro',
     description:
-      'Effortless scheduling made simple—seamlessly manage appointments, optimize workflow, track patient progress, and minimize no-shows.',
+      'Close cases faster and onboard patients effortlessly—with flexible plans, real-time alerts, and a seamless experience from consult to commitment.',
     image: {
       src: screenshotVatReturns,
       alt: 'image of appointment book feature',
     },
   },
   {
-    title: 'Patient portal',
+    title: 'Fee estimator',
     description:
-      'Enhance patient convenience and practice efficiency with a custom-branded portal—empowering patients to manage appointments, payments, and records anytime.',
+      'Close cases faster and onboard patients effortlessly—with flexible plans, real-time alerts, and a seamless experience from consult to commitment.',
     image: {
       src: screenshotVatReturns,
       alt: 'image of patient portal feature',
     },
   },
   {
-    title: 'Automated marketing',
+    title: 'Patient harbor',
     description:
       'Fill your schedule and keep patients engaged with automated follow-ups, marketing, and reminders—so you can focus on creating beautiful smiles.',
     image: {
